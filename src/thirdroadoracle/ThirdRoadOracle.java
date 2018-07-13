@@ -30,7 +30,7 @@ public class ThirdRoadOracle extends Application {
     List<Image> deck = new ArrayList<>();
 
     public void load() {
-        for (int i = 1; i < 43; i++) {
+        for (int i = 0; i < 43; i++) {
             deck.add(new Image(getClass().getResource(i + ".jpg").toExternalForm()));
         }
     }
@@ -65,7 +65,7 @@ public class ThirdRoadOracle extends Application {
 
         bPane1.setCenter(pane1);
         
-        Scene scene1 = new Scene(bPane1, 600, 650);
+        Scene scene1 = new Scene(bPane1, 1200, 1000);
         primaryStage.setScene(scene1);
         primaryStage.show();
 
